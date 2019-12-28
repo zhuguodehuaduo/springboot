@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+  <table class="table">
+      <tr align="center">
+          <td>ID</td>
+          <td>用户名</td>
+          <td>密码</td>
+      </tr>
+      <tr align="center" th:each="stu:${rm.data}">
+          <td th:text="${stu.stuid}"></td>
+          <td th:text="${stu.stuname}"></td>
+          <td th:text="${stu.stupassword}"></td>
+      </tr>
+  </table>
+</body>
+</html>
