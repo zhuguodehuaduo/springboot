@@ -19,7 +19,6 @@ import sun.dc.pr.PRError;
 public class SwaggerConfig {
     //扫描api配置 需要让哪些包下的接口或类生成文档
     private static final String BASS_PACKAGE="com.lry.handler";
-
     @Bean  //这个接口文档的配置内容
     public Docket createApi(){
         return  new Docket(DocumentationType.SWAGGER_2)
